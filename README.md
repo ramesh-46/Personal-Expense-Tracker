@@ -91,4 +91,44 @@ Update a Transaction
 
 Delete a Transaction
 
+User Registration: The /register endpoint allows new users to sign up.
+User Login: The /login endpoint generates a JWT token when the user logs in successfully.
+Protected Routes: The /transactions routes are protected and require a valid JWT token in the Authorization header to access them.
+Testing with Postman
+Register a User:
+
+Method: POST
+URL: http://localhost:5000/register
+Body (JSON):
+json
+Copy code
+{
+  "username": "testuser",
+  "password": "testpassword"
+}
+Login:
+
+Method: POST
+URL: http://localhost:5000/login
+Body (JSON):
+json
+Copy code
+{
+  "username": "testuser",
+  "password": "testpassword"
+}
+You will receive a JWT token in the response.
+Access Protected Route:
+
+Method: GET
+URL: http://localhost:5000/transactions
+Headers:
+Key: Authorization
+Value: Bearer YOUR_JWT_TOKEN
+Replace YOUR_JWT_TOKEN with the token received from the login response.
+
+Now you should have a fully functional server with user authentication and JWT token protection for transaction routes! If you have any further questions or need additional features, feel free to ask!
+
+
+
 u can reach ot at suraramesh46@gmail.com  and 9550354436 for quiries
