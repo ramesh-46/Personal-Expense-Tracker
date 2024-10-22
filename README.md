@@ -132,3 +132,5 @@ Now you should have a fully functional server with user authentication and JWT t
 
 
 u can reach ot at suraramesh46@gmail.com  and 9550354436 for quiries
+
+https://chatgpt.com/share/67179e1a-df60-8006-a22e-7706ad651810
